@@ -10,7 +10,7 @@ import KidsPage from './pages/KidsPage';
 import Header from './components/Header';
 import CommentSection from './components/CommentSection';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsofService";
+import TermsofService from "./pages/TermsofService";
 import CookiesPolicy from "./pages/CookiesPolicy";
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/news" element={<NewsList />} />
         <Route path="/kids" element={<KidsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/terms-of-service" element={<TermsofService />} />
         <Route path="/cookies-policy" element={<CookiesPolicy />} />
       </Routes>
     </>
