@@ -10,7 +10,7 @@ import KidsPage from './pages/KidsPage';
 import Header from './components/Header';
 import CommentSection from './components/CommentSection';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
+import TermsOfService from "./pages/TermsofService";
 import CookiesPolicy from "./pages/CookiesPolicy";
 
 const App = () => {
