@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -8,10 +9,12 @@ import MangaDetailsPage from './pages/MangaDetailsPage';
 import NewsList from './NewsList';
 import KidsPage from './pages/KidsPage';
 import Header from './components/Header';
-import CommentSection from './components/CommentSection';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsofService from "./pages/TermsofService";
 import CookiesPolicy from "./pages/CookiesPolicy";
+import LoginAdult from "./components/LoginAdult";
+import LoginMinor from "./components/LoginMinor";
+import Register from "./components/Register";
 
 const App = () => {
   const [comments, setComments] = useState([]);
@@ -29,8 +32,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <CommentSection comments={comments} onAddComment={handleAddComment} onLike={handleLike} />
+
       <Routes>
+        {/* Ruta principal */}
         <Route path="/" element={<HomePage />} />
         <Route path="/anime" element={<AnimePage />} />
         <Route path="/anime/:id" element={<AnimeDetailsPage />} />
@@ -41,6 +45,9 @@ const App = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsofService />} />
         <Route path="/cookies-policy" element={<CookiesPolicy />} />
+        <Route path="/login-adult" element={<LoginAdult />} />
+        <Route path="/login-minor" element={<LoginMinor />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </>
   );
