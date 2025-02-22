@@ -15,7 +15,8 @@
     "@vitejs/plugin-react": "^4.3.4",
     "bootstrap": "^5.3.3",
     "react-icons": "^5.4.0",
-    "remix": "^1.19.3"
+    "remix": "^1.19.3",
+     "axios": "^1.7.9"
   },
   "engines": {
     "node": ">=18.0.0"
