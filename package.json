@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "start": "node server.js"
+  "start": "cd Backend && npm install && npm run start"
   },
   "dependencies": {
     "@remix-run/dev": "^1.1.3",
