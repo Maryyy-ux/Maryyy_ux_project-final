@@ -1,14 +1,16 @@
-// api2.js
+
 import axios from 'axios';
 
-const API_URL = 'https://www.animenewsnetwork.com/encyclopedia/api.php';
+
+const API_URL = import.meta.env.VITE_API_URL || 'https://maryyy-ux-project-final.onrender.com'; 
 
 export const fetchAnimeNews = async () => {
     try {
-        const response = await axios.get(API_URL, {
+        
+        const response = await axios.get(`${API_URL}/enciclopedia/api.php`, {
             params: {
                 type: 'news',
-                nlist: 10, // Número de noticias a obtener
+                nlist: 10, 
             },
         });
         return response.data;
