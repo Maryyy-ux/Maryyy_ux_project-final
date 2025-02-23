@@ -1,5 +1,4 @@
-// src/api.jsx
-// src/api.jsx
+
 const BASE_URL = "https://api.jikan.moe/v4"; // API Jikan
 const API_URL = import.meta.env.VITE_API_URL; // URL backend on Render
 
